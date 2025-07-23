@@ -53,7 +53,7 @@ const OverviewCards = () => {
           >
             <div className="flex w-full items-start gap-4">
               <div className="flex grow flex-col gap-2">
-                <p className="text-sm">{card.title}</p>
+                <p className="line-clamp-1 truncate text-sm">{card.title}</p>
                 <h3 className="text-3xl font-bold slashed-zero tabular-nums">{card.value}</h3>
               </div>
               <div className="dark:from-card dark:via-card/90 shrink-0 rounded-full bg-linear-to-b from-zinc-100 via-zinc-100/50 to-transparent p-3">
