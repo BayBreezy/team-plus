@@ -60,7 +60,12 @@ const OverviewCards = () => {
                 <card.icon className={`size-6 ${card.iconColor}`} />
               </div>
             </div>
-            <p className="text-muted-foreground mt-3 text-sm">{card.description}</p>
+            <p
+              title={card.description}
+              className="text-muted-foreground mt-3 line-clamp-1 truncate text-sm"
+            >
+              {card.description}
+            </p>
           </div>
         </AnimatedSection>
       ))}
