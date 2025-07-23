@@ -13,10 +13,11 @@
     "build": "tsc -b && vite build",
     "coverage": "vitest run --coverage",
     "dev": "vite --host",
+    "format": "prettier --write .",
     "lint": "eslint .",
+    "prepare": "husky",
     "preview": "vite preview",
-    "test": "vitest",
-    "prepare": "husky"
+    "test": "vitest"
   },
   "dependencies": {
     "@davstack/store": "^1.4.6",
